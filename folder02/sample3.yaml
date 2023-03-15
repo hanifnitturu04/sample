@@ -2,4 +2,4 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: flipkart-ns
- labels:
+  labels:
