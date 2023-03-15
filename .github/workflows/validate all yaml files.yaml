@@ -16,5 +16,3 @@ jobs:
         run: yamllint **/*.yaml
       - name: Validate YAML file
         run: yamllint *.yaml
-      - name: Validate YAML file
-        run: yamllint **/**/*.yaml
