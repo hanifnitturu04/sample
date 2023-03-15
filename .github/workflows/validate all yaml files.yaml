@@ -16,5 +16,5 @@ jobs:
 #       run: yamllint **/*.yaml
 #      - name: Validate YAML file
 #       run: yamllint *.yaml
-       - name: Validate all files 
+      - name: Validate all files 
         run: find . -type d -print0 | xargs -0 -I{} sh -c 'echo {}/ && cd {}/ && yamllint . --no-warnings'
