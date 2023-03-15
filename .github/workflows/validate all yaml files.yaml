@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Validate YAML file
-        run: yamllint ./**/*.yaml --no-warnings
-      - name: Validate YAML file
-        run: yamllint *.yaml --no-warnings
+#      - name: Validate YAML file
+#        run: yamllint ./**/*.yaml --no-warnings
+#      - name: Validate YAML file
+#        run: yamllint *.yaml --no-warnings
+      - name: Validate all files 
+        run: find . -type d  -print0 | xargs -0 -I{} sh -c 'yamllint --no-warnings {}/*.yaml'
