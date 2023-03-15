@@ -2,10 +2,10 @@ name: Validate-YAML
 
 on:
   push:
-    branches: [ main, uat ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, uat ]
-    types: [opened, edited, reopened]
+    branches: [ main ]
+    types: [opened, edited, reopened, synchronize]
 
 jobs:
   validate-yaml:
