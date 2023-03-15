@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Validate YAML file
-        run: yamllint **/*.yaml
+        run: yamllint **/*.yaml --no-warnings
       - name: Validate YAML file
-        run: yamllint *.yaml
+        run: yamllint *.yaml --no-warnings
