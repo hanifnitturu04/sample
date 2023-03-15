@@ -4,4 +4,3 @@ do
 echo "$a"
 done
 echo "for loop demo over..."
-echo "hello"
