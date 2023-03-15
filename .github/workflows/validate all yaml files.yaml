@@ -16,3 +16,4 @@ jobs:
         run: yamllint **/*.yaml
       - name: Validate YAML file
         run: yamllint *.yaml
+::error file={name},line={line},endLine={endLine},title={title}::{message}
