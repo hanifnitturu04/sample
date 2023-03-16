@@ -3,13 +3,9 @@ name: Validate-YAML
 on:
   push:
     branches: [validate]
-    paths-ignore:
-    - '.github/workflows/validate all yaml files.yaml'
   pull_request:
     branches: [main]
     types: [opened, edited, reopened]
-    paths-ignore:
-    - '.github/workflows/validate all yaml files.yaml'
 
 jobs:
   validate-yaml:
