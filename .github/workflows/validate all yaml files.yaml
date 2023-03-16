@@ -2,9 +2,9 @@ name: Validate-YAML
 
 on:
   push:
-    branches: [ validate ]
+    branches: [validate]
   pull_request:
-    branches: [ main ]
+    branches: [main]
     types: [opened, edited, reopened]
 
 jobs:
@@ -16,5 +16,5 @@ jobs:
 #       run: yamllint **/*.yaml
 #      - name: Validate YAML file
 #       run: yamllint *.yaml
-      - name: Validate all files 
+      - name: Validate all files
         run: find . -type d -print0 | xargs -0 -I{} sh -c 'cd {}/ && yamllint . --no-warnings'
